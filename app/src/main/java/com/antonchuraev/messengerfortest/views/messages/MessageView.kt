@@ -24,8 +24,7 @@ class MessageView @JvmOverloads constructor(context: Context, attrs: AttributeSe
             binding.text.apply {
                 text = it.text
 
-                context?.toast( it.isAppUserMessage().toString() )
-                // TODO refactoring
+                // TODO refactoring dont wotk
                 background = ContextCompat.getDrawable(context , if (it.isAppUserMessage()) R.drawable.shape_rect_green_r_16 else R.drawable.shape_rect_gray_r_16 ) //if ( it.isAppUserMessage() ) R.color.green else R.color.gray
 
 
